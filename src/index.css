@@ -1,0 +1,339 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.Container-fluid {
+  width: 100%;
+  height: 100vh;
+}
+.row {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100vh;
+}
+.Heading {
+  font-family: Poppins;
+  font-weight: 700;
+  color: blue;
+  font-style: normal;
+}
+.Paragraf {
+  font-size: 1.5rem;
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: normal;
+}
+.LeftDiv {
+  padding-top: 12rem;
+  padding-left: 10rem;
+  width: 50%;
+  height: 100vh;
+}
+.RightDiv {
+  padding-top: 8rem;
+  padding-left: 8rem;
+  width: 50%;
+  height: 100vh;
+}
+.LogInBox {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  width: 24rem;
+  height: 23rem;
+  border-radius: 6px;
+  box-shadow: 4px 4px 6px 0px;
+  margin: 0 auto;
+}
+.input {
+  width: auto;
+  height: 3rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  outline: none;
+  border: 0.5px solid gray;
+}
+.input:hover {
+  border-color: blue;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 3rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: blue;
+  font-size: 1rem;
+  font-family: Poppins;
+  font-weight: 500;
+}
+.forgotten {
+  font-family: Poppins;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 1rem;
+  color: blue;
+}
+.forgotten:hover {
+  text-decoration: underline;
+}
+.newAccount {
+  width: 12rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  height: 3rem;
+  border: none;
+  background-color: rgb(66, 183, 42);
+  color: white;
+  font-weight: 700;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.7rem;
+  font-family: Poppins;
+}
+
+.main {
+  width: 60rem;
+  margin: 0 auto;
+}
+.text-section {
+  margin-top: 18rem;
+  height: fit-content;
+  padding-top: 6rem;
+}
+.homepage {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.navbar {
+  margin: 0px;
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+}
+.cardmain {
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+}
+.card {
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+  box-shadow: 4px 4px 6px 0px;
+}
+.tr {
+  display: flex;
+  justify-content: space-between;
+}
+.btnhome {
+  margin: 0px;
+  padding: 1px;
+  width: 3rem;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: none;
+}
+.logoDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: auto;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: rgb(229, 241, 253);
+}
+.logoImage {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.homename {
+  margin-left: 0.5rem;
+  color: rgb(24, 119, 242);
+}
+.errorpage {
+  height: 100vh;
+  padding: 20%;
+  text-align: center;
+}
+.btndiv {
+  display: flex;
+  height: 3.5rem;
+  margin-top: 27%;
+  justify-content: center;
+}
+.editbtn {
+  width: 5rem;
+  height: 2.4rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-family: Poppins;
+  border-radius: 4px;
+  padding: 0px;
+}
+.validate1 {
+  float: right;
+  margin-top: 0.5rem;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: red;
+}
+@media (max-width: 769px) {
+  .Container-fluid {
+    height: auto;
+  }
+  .LogInBox {
+    padding: 8px;
+    width: auto;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .text-section {
+    padding: 20px;
+  }
+  .row {
+    margin-top: -3rem;
+    padding: 0px;
+    width: auto;
+    height: auto;
+  }
+  .newAccount {
+    margin-top: -1rem;
+  }
+}
+@media (max-width: 768px) {
+  .btndiv {
+    margin-top: 50%;
+  }
+}
+
+/* for addcontact */
+
+.addRecipe_page {
+  background-color: aquamarine;
+  height: 100vh;
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+}
+
+.form_area {
+  background-color: cadetblue;
+  width: 20rem;
+  height: 30rem;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  border-radius: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  border-radius: 0.5rem;
+  width: 15rem;
+  outline: none;
+}
+.search {
+  border-radius: 0 !important;
+}
+
+.btn-outline-warning {
+  color: blueviolet;
+  border: 1px solid rgb(25, 135, 84);
+}
+
+.bar {
+  border-bottom: 2px solid red;
+  height: 5px;
+  width: 100%;
+}
+.submit {
+  border: none;
+  padding: 0.4rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px #000;
+  outline: none;
+}
+.submit:hover {
+  box-shadow: 0 8px 6px -6px var(--main-color);
+}
+.contactMain {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+.contactTable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: brown;
+  align-items: center;
+  border-radius: 1rem;
+  height: 4rem;
+  color: white;
+}
+.showDataStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+  background-color: blueviolet;
+  height: 3rem;
+  border-radius: 1rem;
+}
+th {
+  color: #000;
+}
+
+.fa-trash-alt:hover {
+  color: #dd370d;
+  cursor: pointer;
+}
+
+/* .pageNotFound {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/pagenotfound.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+.deletebtn {
+  width: 200px;
+  background-color: #dd370d;
+  border: none;
+  padding: 0.4rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px #000;
+  outline: none;
+  color: white;
+}

@@ -54,7 +54,7 @@ const Register = () => {
 
   const HandleEmailValidate = () => {
     let userEmailPattern =
-      /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+      /^([a-zA-Z0-9_\-.]+)@([a-zA-Z0-9_\-.]+)\.([a-zA-Z]{2,5})$/;
     if (userEmailPattern.test(contact.email)) {
       setEmailvalidate("Valid Email");
     } else {
@@ -103,14 +103,20 @@ const Register = () => {
     setAllData([...allData, newRecord]);
 
     let docs = localStorage.getItem("contacts");
+    console.log("docs", docs);
     if (docs !== null) {
       let docArray = JSON.parse(docs) || [];
       docArray = [...docArray, newRecord];
       localStorage.setItem("contacts", JSON.stringify(docArray));
     } else {
       let docArray = [newRecord];
+      console.log("docArray", docArray);
+
       localStorage.setItem("contacts", JSON.stringify(docArray));
     }
+    console.log("alldata", allData);
+    console.log("newrecord", newRecord);
+
     setContact({
       name: "",
       lname: "",
